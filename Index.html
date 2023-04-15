@@ -5,31 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        label{
-            display: block;
-            float: left;
-            width: 70px;
-        }
+    <link rel="stylesheet" href="css/estilo.css">
+
     </style>
 </head>
 <body>
   <form action="">
     <div>
         <label for="rut">Rut</label>
-        <input type="text" id ='rut'>
+        <input type="text" minlength="9" maxlength="10" id ='rut'>
     </div>
     <div>
         <label for="nombre">Nombre</label>
-        <input type="text" id ='nombre'>
+        <input type="text" minlength="3" maxlength="20" id ='nombre'>
     </div>
     <div>
         <label for="apPaterno">Apellido Paterno</label>
-        <input type="text" id ='apPaterno'>
+        <input type="text"  minlength="3" maxlength="20" id ='apPaterno'>
     </div>
     <div>
         <label for="apMaterno">Apellido Maternoo</label>
-        <input type="text" id ='apMaterno'>
+        <input type="text"  minlength="3" maxlength="20" id ='apMaterno'>
+    </div>
+    <div>
+        <label for="edad">Edad</label>
+        <input type="text" id ='edad'>
+    </div>
+    <div>
+        <label for="genero">genero</label>
+        <section></section>
     </div>
 
     <input type="submit" onclick ='return enviarFormulario()' value="Enviar">
